@@ -1,48 +1,30 @@
-#
-# This file is used to declare the list of libraries
-# which are used as dependencies in the project.
-# See https://docs.gradle.org/7.4.2/userguide/platforms.html#sub:central-declaration-of-dependencies
-#
-# For Micronaut, we have 3 kinds of dependencies:
-#   - managed dependencies, which are exposed to consumers via a BOM (or version catalog)
-#   - managed BOMs, which are imported into the BOM that we generate
-#   - all other dependencies, which are implementation details
-#
-# If a library needs to appear in the BOM of the project, then it must be
-# declared with the "managed-" prefix.
-# If a BOM needs to be imported in the BOM of the project, then it must be
-# declared with the "boms-" prefix.
-# Both managed dependencies and BOMs need to have their version declared via
-# a managed version (a version which alias starts with "managed-"
-
 [versions]
-micronaut = "3.8.7"
-micronaut-docs = "2.0.0"
-micronaut-test = "3.9.1"
-groovy = "3.0.13"
-spock = "2.3-groovy-3.0"
+micronaut = "4.0.0-M1"
 
-# Managed versions appear in the BOM
-# managed-somelib = "1.0"
-# managed-somebom = "1.1"
+managed-log4j = "2.19.0"
+managed-logback = "1.4.6"
+managed-slf4j = "2.0.4"
 
 [libraries]
 
-#
-# Managed dependencies appear in the BOM
-#
-# managed-somelib = { module = "group:artifact", version.ref = "managed-somelib" }
+# Log4j
+boms-log4j = { module = "org.apache.logging.log4j:log4j-bom", version.ref = "managed-log4j" }
+managed-log4j = { module = "org.apache.logging.log4j:log4j-core", version.ref = "managed-log4j" }
 
-#
-# Imported BOMs, also appearing in the generated BOM
-#
-# boms-somebom = { module = "com.foo:somebom", version.ref = "managed-somebom" }
+# Logback
+managed-logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "managed-logback" }
+managed-logback-core = { module = "ch.qos.logback:logback-core", version.ref = "managed-logback" }
+managed-logback-access = { module = "ch.qos.logback:logback-access", version.ref = "managed-logback" }
 
-# Other libraries used by the project but non managed
+# SLF4J
+managed-slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "managed-slf4j" }
+managed-slf4j-simple = { module = "org.slf4j:slf4j-simple", version.ref = "managed-slf4j" }
+managed-slf4j-nop = { module = "org.slf4j:slf4j-nop", version.ref = "managed-slf4j" }
+managed-slf4j-log4j12 = { module = "org.slf4j:slf4j-log4j12", version.ref = "managed-slf4j" }
+managed-slf4j-reload4j = { module = "org.slf4j:slf4j-reload4j", version.ref = "managed-slf4j" }
+managed-slf4j-ext = { module = "org.slf4j:slf4j-ext", version.ref = "managed-slf4j" }
+managed-slf4j-jcl-over-slf4j = { module = "org.slf4j:jcl-over-slf4j", version.ref = "managed-slf4j" }
+managed-slf4j-log4j-over-slf4j = { module = "org.slf4j:log4j-over-slf4j", version.ref = "managed-slf4j" }
+managed-slf4j-jul-to-slf4j = { module = "org.slf4j:jul-to-slf4j", version.ref = "managed-slf4j" }
+managed-slf4j-osgi-over-slf4j = { module = "org.slf4j:osgi-over-slf4j", version.ref = "managed-slf4j" }
 
-# micronaut-bom = { module = "io.micronaut:micronaut-bom", version.ref = "micronaut" }
-# jdoctor = { module = "me.champeau.jdoctor:jdoctor-core", version.ref="jdoctor" }
-
-[bundles]
-
-[plugins]
