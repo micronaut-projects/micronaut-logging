@@ -1,1 +1,1 @@
-TODO
+This is a module to provide the logging framework versions that are used by the Micronaut Framework.
