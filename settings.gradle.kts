@@ -18,6 +18,5 @@ rootProject.name = "logging-parent"
 include("logging-bom")
 
 configure<MicronautBuildSettingsExtension> {
-    addSnapshotRepository()
     useStandardizedProjectNames.set(true)
 }
