@@ -1,11 +1,12 @@
 [versions]
-micronaut = "4.0.0-M4"
+micronaut = "4.0.0-M6"
 
 managed-log4j = "2.20.0"
 managed-logback = "1.4.7"
 managed-slf4j = "2.0.7"
 
 [libraries]
+micronaut-core = { module = 'io.micronaut:micronaut-core-bom', version.ref = 'micronaut' }
 
 # Log4j
 boms-log4j = { module = "org.apache.logging.log4j:log4j-bom", version.ref = "managed-log4j" }
