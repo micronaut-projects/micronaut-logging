@@ -2,9 +2,10 @@ plugins {
     id("io.micronaut.build.internal.bom")
 }
 
-// Remove once 1.0.0 is released
 micronautBuild {
     binaryCompatibility {
-        enabled.set(false)
+        enabled.set(true)
+        // TODO required for now. Remove after Micronaut 4 release
+        baselineVersion.set("1.0.0-M5")
     }
 }
