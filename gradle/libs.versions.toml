@@ -1,9 +1,11 @@
 [versions]
-micronaut = "4.1.3"
+micronaut = "4.1.10"
 
 managed-log4j = "2.20.0"
 managed-logback = "1.4.11"
 managed-slf4j = "2.0.9"
+managed-kotlin-logging = "5.1.0"
+managed-tinylog = "2.6.2"
 
 [libraries]
 micronaut-core = { module = 'io.micronaut:micronaut-core-bom', version.ref = 'micronaut' }
@@ -29,3 +31,24 @@ managed-slf4j-log4j-over-slf4j = { module = "org.slf4j:log4j-over-slf4j", versio
 managed-slf4j-jul-to-slf4j = { module = "org.slf4j:jul-to-slf4j", version.ref = "managed-slf4j" }
 managed-slf4j-osgi-over-slf4j = { module = "org.slf4j:osgi-over-slf4j", version.ref = "managed-slf4j" }
 
+# Kotlin-logging
+managed-kotlin-logging = { module = "io.github.oshai:kotlin-logging", version.ref = "managed-kotlin-logging" }
+managed-kotlin-logging-jvm = { module = "io.github.oshai:kotlin-logging-jvm", version.ref = "managed-kotlin-logging" }
+managed-kotlin-logging-js = { module = "io.github.oshai:kotlin-logging-js", version.ref = "managed-kotlin-logging" }
+managed-kotlin-logging-android = { module = "io.github.oshai:kotlin-logging-android", version.ref = "managed-kotlin-logging" }
+managed-kotlin-logging-android-debug = { module = "io.github.oshai:kotlin-logging-android-debug", version.ref = "managed-kotlin-logging" }
+
+# Tinylog
+managed-tinylog-api = { module = "org.tinylog:tinylog-api", version.ref = "managed-tinylog" }
+managed-tinylog-api-kotlin = { module = "org.tinylog:tinylog-api-kotlin", version.ref = "managed-tinylog" }
+managed-tinylog-impl = { module = "org.tinylog:tinylog-impl", version.ref = "managed-tinylog" }
+managed-tinylog-slf4j = { module = "org.tinylog:slf4j-tinylog", version.ref = "managed-tinylog" }
+managed-tinylog-slf4j-binding = { module = "org.tinylog:slf4j-binding", version.ref = "managed-tinylog" }
+managed-tinylog-log4j-facade = { module = "org.tinylog:log4j-facade", version.ref = "managed-tinylog" }
+managed-tinylog-jcl = { module = "org.tinylog:jcl-tinylog", version.ref = "managed-tinylog" }
+managed-tinylog-jcl-binding = { module = "org.tinylog:jcl-binding", version.ref = "managed-tinylog" }
+managed-tinylog-jsl-tinylog = { module = "org.tinylog:jsl-tinylog", version.ref = "managed-tinylog" }
+managed-tinylog-jul = { module = "org.tinylog:tinylog-jul", version.ref = "managed-tinylog" }
+managed-tinylog-jul-tinylog = { module = "org.tinylog:jul-tinylog", version.ref = "managed-tinylog" }
+managed-tinylog-jboss = { module = "org.tinylog:tinylog-jboss", version.ref = "managed-tinylog" }
+managed-tinylog-jboss-tinylog = { module = "org.tinylog:jboss-tinylog", version.ref = "managed-tinylog" }
