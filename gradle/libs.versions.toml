@@ -43,11 +43,8 @@ managed-tinylog-api = { module = "org.tinylog:tinylog-api", version.ref = "manag
 managed-tinylog-api-kotlin = { module = "org.tinylog:tinylog-api-kotlin", version.ref = "managed-tinylog" }
 managed-tinylog-impl = { module = "org.tinylog:tinylog-impl", version.ref = "managed-tinylog" }
 managed-tinylog-slf4j = { module = "org.tinylog:slf4j-tinylog", version.ref = "managed-tinylog" }
-managed-tinylog-slf4j-binding = { module = "org.tinylog:slf4j-binding", version.ref = "managed-tinylog" }
-managed-tinylog-log4j-facade = { module = "org.tinylog:log4j-facade", version.ref = "managed-tinylog" }
 managed-tinylog-jcl = { module = "org.tinylog:jcl-tinylog", version.ref = "managed-tinylog" }
-managed-tinylog-jcl-binding = { module = "org.tinylog:jcl-binding", version.ref = "managed-tinylog" }
-managed-tinylog-jsl-tinylog = { module = "org.tinylog:jsl-tinylog", version.ref = "managed-tinylog" }
+managed-tinylog-jsl = { module = "org.tinylog:jsl-tinylog", version.ref = "managed-tinylog" }
 managed-tinylog-jul = { module = "org.tinylog:tinylog-jul", version.ref = "managed-tinylog" }
 managed-tinylog-jul-tinylog = { module = "org.tinylog:jul-tinylog", version.ref = "managed-tinylog" }
 managed-tinylog-jboss = { module = "org.tinylog:tinylog-jboss", version.ref = "managed-tinylog" }
