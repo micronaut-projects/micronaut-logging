@@ -3,7 +3,7 @@ micronaut = "4.2.3"
 
 managed-log4j = "2.22.1"
 managed-logback = "1.4.14"
-managed-slf4j = "2.0.9"
+managed-slf4j = "2.0.10"
 
 [libraries]
 micronaut-core = { module = 'io.micronaut:micronaut-core-bom', version.ref = 'micronaut' }
