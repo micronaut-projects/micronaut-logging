@@ -2,7 +2,8 @@
 micronaut = "4.3.9"
 
 managed-log4j = "2.23.0"
-managed-logback = "1.4.14"
+managed-logback = "1.5.3"
+managed-logback-access = "1.4.14"
 managed-slf4j = "2.0.12"
 
 [libraries]
@@ -15,7 +16,7 @@ managed-log4j = { module = "org.apache.logging.log4j:log4j-core", version.ref = 
 # Logback
 managed-logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "managed-logback" }
 managed-logback-core = { module = "ch.qos.logback:logback-core", version.ref = "managed-logback" }
-managed-logback-access = { module = "ch.qos.logback:logback-access", version.ref = "managed-logback" }
+managed-logback-access = { module = "ch.qos.logback:logback-access", version.ref = "managed-logback-access" }
 
 # SLF4J
 managed-slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "managed-slf4j" }
