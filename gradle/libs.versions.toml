@@ -1,9 +1,9 @@
 [versions]
-micronaut = "4.6.1"
+micronaut = "4.7.0"
 
-managed-log4j = "2.23.1"
-managed-logback = "1.5.7"
-managed-logback-access = "1.5.7"
+managed-log4j = "2.24.1"
+managed-logback = "1.5.9"
+managed-logback-access = "1.5.9"
 managed-slf4j = "2.0.16"
 
 [libraries]
