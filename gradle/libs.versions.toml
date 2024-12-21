@@ -2,8 +2,8 @@
 micronaut = "4.7.9"
 
 managed-log4j = "2.24.3"
-managed-logback = "1.5.14"
-managed-logback-access = "1.5.14"
+managed-logback = "1.5.15"
+managed-logback-access = "1.5.15"
 managed-slf4j = "2.0.16"
 
 [libraries]
