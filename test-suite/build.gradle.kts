@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("org.sonatype.gradle.plugins.scan") version "3.0.0"
+    id("org.sonatype.gradle.plugins.scan") version "3.1.1"
 }
 val ossIndexUsername : String = (System.getenv("OSS_INDEX_USERNAME") ?: project.properties["ossIndexUsername"]) as? String ?: ""
 val ossIndexPassword : String = (System.getenv("OSS_INDEX_PASSWORD") ?: project.properties["ossIndexPassword"]) as? String ?: ""
