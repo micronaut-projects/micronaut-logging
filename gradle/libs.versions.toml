@@ -1,5 +1,5 @@
 [versions]
-micronaut = "4.8.13"
+micronaut = "4.8.14"
 
 managed-log4j = "2.24.3"
 managed-logback = "1.5.18"
