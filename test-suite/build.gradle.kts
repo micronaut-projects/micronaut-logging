@@ -34,4 +34,6 @@ dependencies {
     implementation(libs.managed.slf4j.log4j.over.slf4j)
     implementation(libs.managed.slf4j.jul.to.slf4j)
     implementation(libs.managed.slf4j.osgi.over.slf4j)
+    implementation(libs.managed.tinylog.api)
+    implementation(libs.managed.tinylog.impl)
 }
