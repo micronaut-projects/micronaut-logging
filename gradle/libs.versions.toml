@@ -1,10 +1,10 @@
 [versions]
-micronaut = "5.2.2"
+micronaut = "5.2.13"
 
 managed-log4j = "2.26.1"
-managed-logback = "1.6.3"
-managed-logback-access = "1.6.3"
-managed-slf4j = "2.0.19"
+managed-logback = "1.6.5"
+managed-logback-access = "1.6.5"
+managed-slf4j = "2.0.20"
 
 [libraries]
 micronaut-core = { module = 'io.micronaut:micronaut-core-bom', version.ref = 'micronaut' }
