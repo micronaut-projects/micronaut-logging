@@ -1,9 +1,9 @@
 [versions]
-micronaut = "5.2.21"
+micronaut = "5.2.23"
 
 managed-log4j = "2.26.1"
-managed-logback = "1.6.6"
-managed-logback-access = "1.6.6"
+managed-logback = "1.6.7"
+managed-logback-access = "1.6.7"
 managed-slf4j = "2.0.20"
 
 [libraries]
@@ -29,4 +29,3 @@ managed-slf4j-jcl-over-slf4j = { module = "org.slf4j:jcl-over-slf4j", version.re
 managed-slf4j-log4j-over-slf4j = { module = "org.slf4j:log4j-over-slf4j", version.ref = "managed-slf4j" }
 managed-slf4j-jul-to-slf4j = { module = "org.slf4j:jul-to-slf4j", version.ref = "managed-slf4j" }
 managed-slf4j-osgi-over-slf4j = { module = "org.slf4j:osgi-over-slf4j", version.ref = "managed-slf4j" }
-
